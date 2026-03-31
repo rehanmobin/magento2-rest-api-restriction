@@ -3,7 +3,7 @@
     "type": "magento2-module",
     "description": "Restrict/Disabled Rest API Endpoints.",
     "minimum-stability": "stable",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
