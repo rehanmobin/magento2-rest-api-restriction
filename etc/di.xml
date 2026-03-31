@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     Mage4_RestApiRestriction
+ * @author      Rehan Mobin <m.rehan.mobin@gmail.com>
+ * @copyright   Copyright (c) Mage4. All rights reserved. (https://www.mage4.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Webapi\Rest\RequestMethodValidator">
+        <plugin name="m4_restrict_rest_api_endpoints" type="Mage4\RestApiRestriction\Plugin\Webapi\Rest\RequestMethodValidatorPlugin" sortOrder="10" />
+    </type>
+</config>

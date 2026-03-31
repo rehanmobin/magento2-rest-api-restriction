@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     Mage4_RestApiRestriction
+ * @author      Rehan Mobin <m.rehan.mobin@gmail.com>
+ * @copyright   Copyright (c) Mage4. All rights reserved. (https://www.mage4.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <rest_api_restriction>
+            <general>
+                <is_enabled>0</is_enabled>
+            </general>
+        </rest_api_restriction>
+    </default>
+</config>

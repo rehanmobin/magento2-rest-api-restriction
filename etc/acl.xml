@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * @package     Mage4_RestApiRestriction
+ * @author      Rehan Mobin <m.rehan.mobin@gmail.com>
+ * @copyright   Copyright (c) Mage4. All rights reserved. (https://www.mage4.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Mage4_Base::mage4_extensions">
+                                <resource id="Mage4_RestApiRestriction::rest_api_restriction"
+                                          title="MAGE4 Rest API Restriction"
+                                          translate="title"
+                                          sortOrder="11"/>
+                            </resource>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

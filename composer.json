@@ -1,0 +1,53 @@
+{
+    "name": "mage4/magento2-rest-api-restriction",
+    "type": "magento2-module",
+    "description": "Restrict/Disabled Rest API Endpoints.",
+    "minimum-stability": "stable",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Rehan Mobin",
+            "email": "m.rehan.mobin@gmail.com",
+            "homepage": "https://rehanmobin.github.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "magento/framework": "*"
+    },
+    "keywords": [
+        "magento",
+        "magento 2",
+        "magento2",
+        "magento extension",
+        "magento 2 extension",
+        "magento module",
+        "magento 2 module",
+        "mage4",
+        "rest api",
+        "webapi",
+        "magento webapi",
+        "rest endpoint restriction",
+        "api restriction",
+        "api access control",
+        "api security",
+        "disable api endpoint",
+        "disable rest api",
+        "restrict rest api",
+        "restrict api endpoints",
+        "endpoint blocker",
+        "endpoint restriction"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mage4\\RestApiRestriction\\": ""
+        }
+    }
+}

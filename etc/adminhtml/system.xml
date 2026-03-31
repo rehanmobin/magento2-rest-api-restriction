@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     Mage4_RestApiRestriction
+ * @author      Rehan Mobin <m.rehan.mobin@gmail.com>
+ * @copyright   Copyright (c) Mage4. All rights reserved. (https://www.mage4.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="rest_api_restriction" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>REST API Restriction</label>
+            <tab>mage4_extensions</tab>
+            <resource>Mage4_RestApiRestriction::rest_api_restriction</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1">
+                <label>General</label>
+                <field id="is_enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1">
+                    <label>Enable API Restriction</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="disabled_endpoints" translate="label comment" type="textarea" sortOrder="20" showInDefault="1">
+                    <label>Disabled REST API Endpoints</label>
+                    <comment><![CDATA[
+One endpoint path per line.<br/>
+Examples:<br/>
+/V1/guest-carts/:cartId<br/>
+/V1/customers/me<br/>
+/V1/products/:sku/options<br/>
+/V1/products/attributes/:attributeCode/is-filterable/:isFilterable<br/>
+You can also paste full REST paths like /rest/default/V1/customers/me and they will be normalized automatically.
+                    ]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
